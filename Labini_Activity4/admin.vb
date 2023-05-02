@@ -1,6 +1,9 @@
 ﻿Imports System.IO
 Imports System.Windows
+Imports System.Data.Common
+Imports Excel = Microsoft.Office.Interop.Excel
 Imports MySql.Data.MySqlClient
+Imports Microsoft.Office.Interop.Excel
 
 Public Class admin
     Private Sub admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -35,7 +38,7 @@ Public Class admin
         Dim productPrice As Double = CDbl(selectedRow.Cells("price").Value)
         Form5.productid.Text = productId.ToString()
         Form5.product.Text = productName
-        Form5.categoryid.text = categoryid.ToString()
+        Form5.categoryid.Text = categoryid.ToString()
         Form5.price.Text = productPrice.ToString()
         Form5.ShowDialog()
     End Sub
@@ -60,7 +63,9 @@ Public Class admin
 
         If openFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             ' Read the contents of the CSV file into a DataTable
+#Disable Warning BC30375 ' 'New' cannot be used on an interface.
             Dim dt As New DataTable()
+#Enable Warning BC30375 ' 'New' cannot be used on an interface.
             Using sr As New StreamReader(openFileDialog1.FileName)
                 Dim headers() As String = sr.ReadLine().Split(","c)
                 For Each header In headers
@@ -124,4 +129,10 @@ Public Class admin
             End Try
         End If
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Call importToExcel(Me.DataGridView1, "samplereport.xlsx")
+
+    End Sub
+
 End Class

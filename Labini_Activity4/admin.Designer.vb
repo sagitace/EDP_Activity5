@@ -40,6 +40,7 @@ Partial Class admin
         Me.Button5 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -52,7 +53,7 @@ Partial Class admin
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.Menu
         Me.GroupBox1.Controls.Add(Me.txtProducts)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox1.Location = New System.Drawing.Point(85, 176)
+        Me.GroupBox1.Location = New System.Drawing.Point(71, 212)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(250, 125)
         Me.GroupBox1.TabIndex = 0
@@ -74,7 +75,7 @@ Partial Class admin
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.Menu
         Me.GroupBox2.Controls.Add(Me.txtCustomers)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox2.Location = New System.Drawing.Point(412, 176)
+        Me.GroupBox2.Location = New System.Drawing.Point(398, 212)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(250, 125)
         Me.GroupBox2.TabIndex = 1
@@ -96,7 +97,7 @@ Partial Class admin
         Me.GroupBox3.BackColor = System.Drawing.SystemColors.Menu
         Me.GroupBox3.Controls.Add(Me.txtWeeklyRevenue)
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox3.Location = New System.Drawing.Point(85, 348)
+        Me.GroupBox3.Location = New System.Drawing.Point(71, 384)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(250, 125)
         Me.GroupBox3.TabIndex = 2
@@ -117,7 +118,7 @@ Partial Class admin
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(771, 134)
+        Me.DataGridView1.Location = New System.Drawing.Point(771, 106)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
@@ -129,7 +130,7 @@ Partial Class admin
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(771, 83)
+        Me.Label4.Location = New System.Drawing.Point(771, 55)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(90, 38)
         Me.Label4.TabIndex = 5
@@ -141,7 +142,7 @@ Partial Class admin
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
-        Me.Label1.Location = New System.Drawing.Point(85, 83)
+        Me.Label1.Location = New System.Drawing.Point(71, 119)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(409, 38)
         Me.Label1.TabIndex = 6
@@ -153,7 +154,7 @@ Partial Class admin
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(771, 493)
+        Me.Button1.Location = New System.Drawing.Point(771, 458)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(288, 41)
         Me.Button1.TabIndex = 7
@@ -166,9 +167,9 @@ Partial Class admin
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(1106, 493)
+        Me.Button2.Location = New System.Drawing.Point(1091, 459)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(239, 41)
+        Me.Button2.Size = New System.Drawing.Size(254, 41)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Remove Product"
         Me.Button2.UseVisualStyleBackColor = False
@@ -191,7 +192,7 @@ Partial Class admin
         Me.GroupBox4.BackColor = System.Drawing.SystemColors.Menu
         Me.GroupBox4.Controls.Add(Me.Label2)
         Me.GroupBox4.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox4.Location = New System.Drawing.Point(412, 348)
+        Me.GroupBox4.Location = New System.Drawing.Point(398, 384)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(250, 125)
         Me.GroupBox4.TabIndex = 3
@@ -214,9 +215,9 @@ Partial Class admin
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button3.Location = New System.Drawing.Point(1106, 549)
+        Me.Button3.Location = New System.Drawing.Point(773, 565)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(239, 41)
+        Me.Button3.Size = New System.Drawing.Size(286, 41)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Backup Database"
         Me.Button3.UseVisualStyleBackColor = False
@@ -227,7 +228,7 @@ Partial Class admin
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button5.Location = New System.Drawing.Point(771, 550)
+        Me.Button5.Location = New System.Drawing.Point(771, 514)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(288, 41)
         Me.Button5.TabIndex = 12
@@ -254,6 +255,19 @@ Partial Class admin
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Backup File Location:"
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button6.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button6.Location = New System.Drawing.Point(1091, 516)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(256, 41)
+        Me.Button6.TabIndex = 15
+        Me.Button6.Text = "Export"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
@@ -262,6 +276,7 @@ Partial Class admin
         Me.BackgroundImage = Global.Labini_Activity4.My.Resources.Resources.Admin_side
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1432, 703)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button5)
@@ -312,4 +327,5 @@ Partial Class admin
     Friend WithEvents Button5 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button6 As Button
 End Class
